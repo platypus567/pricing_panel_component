@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body{
+    background-color: #60a9ff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+img{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.panelpricing-table{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 8%;
+    justify-content: space-around;
+    margin-left: 7%;
+    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    color: #60a9ff;
+    border-bottom: 1px solid #e1f1ff;
+}  
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+.pricing-price{
+    font-size: 32px;
+    font-weight: 700;
+    color: #016ff9;
+    display: block;
+    
+}
+.pricing-img{
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
+}
+.pricing-features{
+    list-style-type: none;
+    margin: 50px 0 25px;
+    color: #016ff9;
+    
+}
+.pricing-features-item{
+    
+    border-top:  1px solid #60a9ff;
+    padding: 15px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 45px;
+}
+.pricing-features-item:last-child{
+
+
+    border-bottom: 1px solid #60a9ff;
+}
+.pricing-button{
+    display: flex;
+    border: 1px solid #60a9ff;
+    color: white;
+    background-color: #60a9ff;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 3%;
+    transition: 1s ease-in-out;
+    margin-bottom: 10px;
+}
+.pricing-button:hover{
+    background-color: white;
+    color: #60a9ff;
+}
+.pricing-header{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 1000px){
+    .panelpricing-table{
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10%;
+        margin-right: 8%;
+        justify-content: space-around;
+        margin-left: 7%;
+        padding-bottom: 3%;
+        
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
+
